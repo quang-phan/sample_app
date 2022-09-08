@@ -1,4 +1,8 @@
 en:
+  pagy:
+    nav:
+      prev: "prev"
+      next: "next"
   layouts:
     header:
       home: "Home"
@@ -43,6 +47,9 @@ en:
       sign_up: "Sign up now!"
 
   users:
+    index:
+      title: "All users"
+      message: "Please log in"
     new:
       title: "Sign up"
       sign_up: "Sign up"
@@ -57,6 +64,27 @@ en:
     create:
       welcome: "Welcome to the Sample App!"
       danger: "Can't create users"
+    update:
+      success: "Profile update"
+      error: "Can't update profile"
+    edit:
+      title: "Edit user"
+      name: "Name"
+      email: "Email"
+      password: "Password"
+      password_confirmation: "Password confirmation"
+      save_change: "Save changes"
+      change: "Change"
+      message: "Please log in"
+      edit_error_message: "You don't allowed update or edit this user"
+      delete_error_message: "You don't allowed to delete users"
+      h1_text: "Update your profile"
+    destroy:
+      success: "User deleted"
+      error: "Can't delete user"
+    user:
+      delete: "delete"
+      sure: "You sure?"
 
   shared:
     error_messages:

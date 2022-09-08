@@ -1,4 +1,8 @@
 vi:
+  pagy:
+    nav:
+      prev: "Trước"
+      next: "Tiếp"
   layouts:
     header:
       home: "Trang chủ"
@@ -8,7 +12,7 @@ vi:
       users: "Người dùng"
       account: "Tài khoản <b class=\"caret\"></b>"
       profile: "Trang cá nhân"
-      settings: "Cài đặt"
+      settings: "Thay đổi"
     footer:
       small: "Khóa học <a href=\"https://www.railstutorial.org/\"> Ruby on Rails</a> của <a href=\"https://www.michaelhartl.com/\">Michael Hartl</a>"
       about: "Thông tin"
@@ -42,6 +46,9 @@ vi:
       sign_up: "Đăng ký ngay!"
 
   users:
+    index:
+      title: "Danh sách người dùng"
+      message: "Vui lòng đăng nhập"
     new:
       title: "Đăng ký"
       sign_up: "Đăng ký"
@@ -56,6 +63,27 @@ vi:
     create:
       welcome: "Chào mừng đến với Sample App!"
       danger: "Không thể tạo thông tin người dùng"
+    update:
+      success: "Thông tin đã được cập nhật"
+      error: "Cập nhật thông tin thất bại"
+    edit:
+      title: "Cập nhật tài khoản"
+      name: "Tên"
+      email: "Địa chỉ thư"
+      password: "Mật khẩu"
+      password_confirmation: "Xác nhận mật khẩu"
+      save_change: "Lưu thay đổi"
+      change: "Thay đổi"
+      message: "Vui lòng đăng nhập"
+      edit_error_message: "Bạn không được phép cập nhật hoặc thay đổi người dùng"
+      delete_error_message: "Bạn không được phép xóa người dùng"
+      h1_text: "Cập nhật thông tin"
+    destroy:
+      success: "Xóa thành công"
+      error: "Xóa người dùng thất bại"
+    user:
+      delete: "xóa"
+      sure: "Bạn chắc chắn muốn xóa?"
 
   shared:
     error_messages:
