@@ -1,0 +1,42 @@
+en:
+  layouts:
+    header:
+      home: "Home"
+      help: "Help"
+      log_in: "Log in"
+    footer:
+      small: "The <a href=\"https://www.railstutorial.org/\"> Ruby on Rails Tutorial</a> by <a href=\"https://www.michaelhartl.com/\">Michael Hartl</a>"
+      about: "About"
+      contact: "Contact"
+      news: "News"
+    application:
+      base_title: "Ruby on Rails Tutorial Sample App"
+  static_pages:
+    about:
+      title: "About"
+      about: "About"
+      text: "This is a about page"
+    contact:
+      title: "Contact"
+      contact: "Contact"
+      text: "Contact the Ruby on Rails Tutorial about the sample app at the
+  <a href=\"https://www.railstutorial.org/contact\">contact page</a>"
+    help:
+      title: "Help"
+      help: "Help"
+      text: "Get help on the Ruby on Rails Tutorial at the
+  <a href=\"https://www.railstutorial.org/help\">Rails Tutorial help page</a>.
+  To get help on this sample app, see the
+  <a href=\"https://www.railstutorial.org/book\"><em>Ruby on Rails Tutorial</em>
+  book</a>"
+    home:
+      welcome: "Welcome to the Sample App"
+      text: "This is the home page for the
+    <a href=\"https://www.railstutorial.org/\">Ruby on Rails Tutorial</a>
+    sameple application."
+      sign_up: "Sign up now!"
+  users:
+    new:
+      title: "Sign up"
+      sign_up: "Sign up"
+      text: "This will be a sign up page for new users."
