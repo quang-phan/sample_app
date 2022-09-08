@@ -4,6 +4,8 @@ user:
     name_max: 50
     email_max: 255
     password_min: 6
+  expiring:
+    email: 2
 footer:
   url:
     new: "https://news.railstutorial.org/"

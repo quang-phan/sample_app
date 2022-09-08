@@ -1,0 +1,6 @@
+user_name: "fd8a0913de668e"
+password: "38c03e41156d98"
+address: "smtp.mailtrap.io"
+domain: "smtp.mailtrap.io"
+port: "2525"
+authentication: "cram_md5"

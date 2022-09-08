@@ -45,6 +45,28 @@ vi:
     <a href=\"https://www.railstutorial.org/\">Ruby on Rails</a>"
       sign_up: "Đăng ký ngay!"
 
+  password_resets:
+    new:
+      title: "Quên mật khẩu"
+      email: "Địa chỉ thư"
+      submit: "Xác nhận"
+    create:
+      info_email_sended: "Một email đã được gửi với yêu cầu đặt lại mật khẩu"
+      not_found_email: "Không tìm thấy địa chỉ email"
+    edit:
+      title: "Đặt lại mật khẩu"
+      password: "Mật khẩu mới"
+      password_confirmation: "Xác nhận mật khẩu"
+      submit: "Cập nhật mật khẩu"
+      user_not_found: "Không tìm thấy địa chỉ email"
+      password_reset_expried: "Hết hạn đặt lại mật khẩu."
+    update:
+      user_not_found: "Không tìm thấy địa chỉ email"
+      password_reset_expried: "Hết hạn đặt lại mật khẩu."
+      empty_password_error: "Không được để trống"
+      success_update: "Mật khẩu đã được cập nhật."
+      invalid_password: "Mật khẩu không hợp lệ"
+
   users:
     index:
       title: "Danh sách người dùng"
@@ -100,6 +122,7 @@ vi:
       sign_up: "Đăng ký ngay!"
       new_user: "Người dùng mới?"
       remember_me: "Ghi nhớ đăng nhập"
+      forgot_password: "(quên mật khẩu)"
     create:
       error_message: "Tài khoản hoặc mật khẩu không đúng"
       account_activation_error: "Tài khoản chưa hoàn thành việc đăng ký. Kiểm
@@ -112,6 +135,14 @@ vi:
       title: "Sample App"
       activate: "Hoàn thành đăng ký"
       mailers_subject: "Xác thực tài khoản"
+    password_reset:
+      title: "Đặt lại mật khẩu"
+      reset_password: "Đặt mật khẩu"
+      mailers_reset_subject: "Đặt lại mật khẩu"
+      text_1: "Để đặt lại mật khẩu bạn hãy nhấn vào link sau:"
+      text_2: "Link này sẽ hết hạn sau 2 giờ."
+      text_3: "Nếu bạn không yêu cầu đặt lại mật khẩu, vui lòng bỏ qua email này."
+
   account_activations:
     success_activation: "Đã hoàn thành đăng ký tài khoản"
     fail_activation: "Đường dẫn không hợp lệ"

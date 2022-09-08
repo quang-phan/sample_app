@@ -46,6 +46,28 @@ en:
     sameple application."
       sign_up: "Sign up now!"
 
+  password_resets:
+    new:
+      title: "Forgot password"
+      email: "Email"
+      submit: "Submit"
+    create:
+      info_email_sended: "Email sent with password reset instructions"
+      not_found_email: "Email address not found"
+    edit:
+      title: "Reset password"
+      password: "Password"
+      password_confirmation: "Confirmation"
+      submit: "Update password"
+      user_not_found: "Can't find email address"
+      password_reset_expried: "Password reset has expired."
+    update:
+      user_not_found: "Can't find email address"
+      password_reset_expried: "Password reset has expired."
+      empty_password_error: "can't be empty"
+      success_update: "Password has been reset."
+      invalid_password: "Invalid password"
+
   users:
     index:
       title: "All users"
@@ -101,6 +123,7 @@ en:
       sign_up: "Sign up now!"
       new_user: "New user?"
       remember_me: "Remember me on this computer"
+      forgot_password: "(forgot password)"
     create:
       error_message: "Invalid email/password combination"
       account_activation_error: "Account not activated. Check your email for
@@ -114,6 +137,14 @@ en:
       title: "Sample App"
       activate: "Activate"
       mailers_subject: "Account activation"
+    password_reset:
+      title: "Password reset"
+      reset_password: "Reset password"
+      mailers_reset_subject: "Password reset"
+      text_1: "To reset your password click the link below:"
+      text_2: "This link will expire in two hours."
+      text_3: "If you did not request your password to be reset, please ignore this email and your password will stay as it is."
+
   account_activations:
     success_activation: "Account activated!"
     fail_activation: "Invalid activation link"
