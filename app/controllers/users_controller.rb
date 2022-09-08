@@ -6,14 +6,16 @@ class UsersController < ApplicationController
   before_action :translate_pagy, only: :index
 
   def index
-    @pagy, @users = pagy(User.all)
+    @pagy, @users = pagy User.seach_all
   end
 
   def new
     @user = User.new
   end
 
-  def show; end
+  def show
+    @pagy, @microposts = pagy @user.microposts
+  end
 
   def create
     @user = User.new user_params
@@ -53,14 +55,6 @@ class UsersController < ApplicationController
   def user_params
     params.require(:user).permit(:name, :email, :password,
                                  :password_confirmation)
-  end
-
-  def logged_in_user
-    return if logged_in?
-
-    store_location
-    flash[:danger] = t ".message"
-    redirect_to login_path
   end
 
   def correct_user
