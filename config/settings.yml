@@ -12,3 +12,5 @@ user_helper:
 users:
   gravatar_for:
     size: 50
+email:
+  from: "phan.chinh.quang@example.com"
