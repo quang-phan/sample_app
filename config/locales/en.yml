@@ -11,6 +11,7 @@ en:
       news: "News"
     application:
       base_title: "Ruby on Rails Tutorial Sample App"
+
   static_pages:
     about:
       title: "About"
@@ -35,8 +36,24 @@ en:
     <a href=\"https://www.railstutorial.org/\">Ruby on Rails Tutorial</a>
     sameple application."
       sign_up: "Sign up now!"
+
   users:
     new:
       title: "Sign up"
       sign_up: "Sign up"
-      text: "This will be a sign up page for new users."
+      confirmation: "Confirmation"
+      name: "name"
+      email: "email"
+      password: "password"
+      password_confirmation: "password_confirmation"
+      submit: "Create my account"
+    show:
+      error_messages: "Not found user"
+    create:
+      welcome: "Welcome to the Sample App!"
+      danger: "Can't create users"
+
+  shared:
+    error_messages:
+      text: "The form contains"
+      error: "error"

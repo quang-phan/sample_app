@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 2022_09_12_082959) do
 
-  create_table "users", charset: "utf8mb4", collation: "utf8mb4_vietnamese_ci", force: :cascade do |t|
+  create_table "users", charset: "utf8mb4", force: :cascade do |t|
     t.string "name"
     t.string "email"
     t.datetime "created_at", precision: 6, null: false

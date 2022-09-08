@@ -11,6 +11,7 @@ vi:
       news: "Mới"
     application:
       base_title: "Sample app của khóa học Ruby on Rails"
+
   static_pages:
     about:
       title: "Thông tin"
@@ -34,8 +35,24 @@ vi:
       text: "Đây là trang chủ cho khóa học 
     <a href=\"https://www.railstutorial.org/\">Ruby on Rails</a>"
       sign_up: "Đăng ký ngay!"
+
   users:
     new:
       title: "Đăng ký"
       sign_up: "Đăng ký"
-      text: "Đây sẽ là trang đăng ký cho người dùng mới."
+      confirmation: "Xác nhận"
+      name: "Tên"
+      email: "Địa chỉ thư điện tử"
+      password: "Mật khẩu"
+      password_confirmation: "Xác nhận mật khẩu"
+      submit: "Tạo tài khoản"
+    show:
+      error_messages: "Không tìm thấy thông tin người dùng"
+    create:
+      welcome: "Chào mừng đến với Sample App!"
+      danger: "Không thể tạo thông tin người dùng"
+
+  shared:
+    error_messages:
+      text: "Bạn nhập sai"
+      error: "trường"
