@@ -70,5 +70,6 @@ vi:
       submit: "Đăng nhập"
       sign_up: "Đăng ký ngay!"
       new_user: "Người dùng mới?"
+      remember_me: "Ghi nhớ đăng nhập"
     create:
       error_message: "Tài khoản hoặc mật khẩu không đúng"
