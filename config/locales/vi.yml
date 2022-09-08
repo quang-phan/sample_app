@@ -3,6 +3,7 @@ vi:
     nav:
       prev: "Trước"
       next: "Tiếp"
+      gap: ". . ."
 
   layouts:
     header:
@@ -110,6 +111,13 @@ vi:
     user:
       delete: "xóa"
       sure: "Bạn chắc chắn muốn xóa?"
+    follow:
+      follow: "Theo dõi"
+    unfollow:
+      unfollow: "Hủy theo dõi"
+    show_follow:
+      my_profile: "Trang cá nhân của tôi"
+      microposts: "Bài đăng:"
 
   shared:
     error_messages:
@@ -121,6 +129,9 @@ vi:
     user_info:
       view_profile: "Trang cá nhân của tôi"
       micropost: "Bài đăng"
+    stats:
+      following: "Đang theo dõi"
+      followers: "Người theo dõi"
 
   sessions:
     new:
@@ -168,6 +179,23 @@ vi:
       not_fond: "Không tìm thấy người dùng"
       success: "Đã xóa bài đăng"
       error: "Không thể xóa bài đăng"
+
+  relationships:
+    create:
+      success: "Theo dõi người dùng thành công!"
+      error: "Không thể theo dõi người dùng!"
+      not_found_user: "Người dùng không tồn tại"
+    destroy:
+      success: "Đã bỏ theo dõi người dùng!"
+      error: "Không thể  bỏ theo dõi người dùng!"
+      not_found_user: "Người dùng không tồn tại"
+
+  following:
+    index:
+      following: "Đang theo dõi"
+  followers:
+    index:
+      follower: "Người theo dõi"
 
   error_alert: "Giới hạn file là 5MB. Vui lòng chọn file có kích thước nhỏ hơn"
 
