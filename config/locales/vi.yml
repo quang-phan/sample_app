@@ -1,0 +1,41 @@
+vi:
+  layouts:
+    header:
+      home: "Trang chủ"
+      help: "Trợ giúp"
+      log_in: "Đăng nhập"
+    footer:
+      small: "Khóa học <a href=\"https://www.railstutorial.org/\"> Ruby on Rails</a> của <a href=\"https://www.michaelhartl.com/\">Michael Hartl</a>"
+      about: "Thông tin"
+      contact: "Liên hệ"
+      news: "Mới"
+    application:
+      base_title: "Sample app của khóa học Ruby on Rails"
+  static_pages:
+    about:
+      title: "Thông tin"
+      about: "Thông tin"
+      text: "Đây là trang hiển thị thông tin về trang web này"
+    contact:
+      title: "Liên hệ"
+      contact: "Liên hệ"
+      text: "Chi tiết về sample app trong khóa học Ruby on Rails tại
+  <a href=\"https://www.railstutorial.org/contact\">đây</a>"
+    help:
+      title: "Trợ giúp"
+      help: "Trợ giúp"
+      text: "Nhận trợ giúp trong khóa học Ruby on Rails tại 
+  <a href=\"https://www.railstutorial.org/help\">đây</a>.
+  Để nhận trợ giúp về sách
+  <a href=\"https://www.railstutorial.org/book\"><em>Ruby on Rails Tutorial</em>
+  </a>"
+    home:
+      welcome: "Chào mừng đến với Sample App"
+      text: "Đây là trang chủ cho khóa học 
+    <a href=\"https://www.railstutorial.org/\">Ruby on Rails</a>"
+      sign_up: "Đăng ký ngay!"
+  users:
+    new:
+      title: "Đăng ký"
+      sign_up: "Đăng ký"
+      text: "Đây sẽ là trang đăng ký cho người dùng mới."
