@@ -4,6 +4,11 @@ vi:
       home: "Trang chủ"
       help: "Trợ giúp"
       log_in: "Đăng nhập"
+      log_out: "Đăng xuất"
+      users: "Người dùng"
+      account: "Tài khoản <b class=\"caret\"></b>"
+      profile: "Trang cá nhân"
+      settings: "Cài đặt"
     footer:
       small: "Khóa học <a href=\"https://www.railstutorial.org/\"> Ruby on Rails</a> của <a href=\"https://www.michaelhartl.com/\">Michael Hartl</a>"
       about: "Thông tin"
@@ -56,3 +61,14 @@ vi:
     error_messages:
       text: "Bạn nhập sai"
       error: "trường"
+
+  sessions:
+    new:
+      title: "Đăng nhập"
+      email: "Địa chỉ thư"
+      password: "Mật khẩu"
+      submit: "Đăng nhập"
+      sign_up: "Đăng ký ngay!"
+      new_user: "Người dùng mới?"
+    create:
+      error_message: "Tài khoản hoặc mật khẩu không đúng"
