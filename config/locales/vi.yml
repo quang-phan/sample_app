@@ -63,6 +63,7 @@ vi:
     create:
       welcome: "Chào mừng đến với Sample App!"
       danger: "Không thể tạo thông tin người dùng"
+      email_activation: "Vui lòng kiểm tra email của bạn để hoàn thành việc đăng ký tài khoản mới."
     update:
       success: "Thông tin đã được cập nhật"
       error: "Cập nhật thông tin thất bại"
@@ -101,3 +102,16 @@ vi:
       remember_me: "Ghi nhớ đăng nhập"
     create:
       error_message: "Tài khoản hoặc mật khẩu không đúng"
+      account_activation_error: "Tài khoản chưa hoàn thành việc đăng ký. Kiểm
+        tra gmail của bạn để hoàn thành việc đăng ký tài khoản mới"
+
+  user_mailer:
+    account_activation:
+      hi_text: "Chào"
+      welcome_text: "Chào mừng đến với Sample App! Nhấn vào link bên dưới để hoàn thành việc đăng ký tài khoản mới"
+      title: "Sample App"
+      activate: "Hoàn thành đăng ký"
+      mailers_subject: "Xác thực tài khoản"
+  account_activations:
+    success_activation: "Đã hoàn thành đăng ký tài khoản"
+    fail_activation: "Đường dẫn không hợp lệ"

@@ -64,6 +64,7 @@ en:
     create:
       welcome: "Welcome to the Sample App!"
       danger: "Can't create users"
+      email_activation: "Please check your email to activate your account."
     update:
       success: "Profile update"
       error: "Can't update profile"
@@ -102,3 +103,17 @@ en:
       remember_me: "Remember me on this computer"
     create:
       error_message: "Invalid email/password combination"
+      account_activation_error: "Account not activated. Check your email for
+        the activation link."
+
+  user_mailer:
+    account_activation:
+      hi_text: "Hi"
+      welcome_text: "Welcome to the Sample App! Click on the link below to
+        activate your account:"
+      title: "Sample App"
+      activate: "Activate"
+      mailers_subject: "Account activation"
+  account_activations:
+    success_activation: "Account activated!"
+    fail_activation: "Invalid activation link"

@@ -3,7 +3,7 @@ class UsersController < ApplicationController
   before_action :find_user_by_id, except: %i(new create index)
   before_action :correct_user, only: %i(edit update)
   before_action :admin_user, only: :destroy
-  before_action {@pagy_locale = params[:locale], only = :index}
+  before_action :translate_pagy, only: :index
 
   def index
     @pagy, @users = pagy(User.all)
@@ -19,9 +19,9 @@ class UsersController < ApplicationController
     @user = User.new user_params
 
     if @user.save
-      log_in @user
-      flash[:success] = t ".welcome"
-      redirect_to @user
+      @user.send_activation_email
+      flash[:info] = t ".email_activation"
+      redirect_to root_path
     else
       flash.now[:danger] = t ".danger"
       render :new
@@ -83,5 +83,9 @@ class UsersController < ApplicationController
 
     flash[:danger] = t ".error_messages"
     redirect_to root_path
+  end
+
+  def translate_pagy
+    @pagy_locale = params[:locale]
   end
 end

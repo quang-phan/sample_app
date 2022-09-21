@@ -36,6 +36,22 @@ Rails.application.configure do
   # Don't care if the mailer can't send.
   config.action_mailer.raise_delivery_errors = false
 
+  #mailtrap's settings
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    user_name: ENV["user_name"],
+    password: ENV["password"],
+    address: ENV["address"],
+    domain: ENV["domain"],
+    port: ENV["port"],
+    authentication: ENV["authentication"]
+  }
+  #end mailtrap's settings
+
+  host = "localhost:3000"
+
+  config.action_mailer.default_url_options = { host: host, protocol: "http" }
+
   config.action_mailer.perform_caching = false
 
   # Print deprecation notices to the Rails logger.
