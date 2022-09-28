@@ -3,6 +3,7 @@ en:
     nav:
       prev: "prev"
       next: "next"
+
   layouts:
     header:
       home: "Home"
@@ -45,6 +46,7 @@ en:
     <a href=\"https://www.railstutorial.org/\">Ruby on Rails Tutorial</a>
     sameple application."
       sign_up: "Sign up now!"
+      micropost_feed: "Micropost Feed"
 
   password_resets:
     new:
@@ -83,6 +85,7 @@ en:
       submit: "Create my account"
     show:
       error_messages: "Not found user"
+      micropost: "Microposts"
     create:
       welcome: "Welcome to the Sample App!"
       danger: "Can't create users"
@@ -113,6 +116,12 @@ en:
     error_messages:
       text: "The form contains"
       error: "error"
+    micropost_form:
+      placeholder: "Compose new micropost..."
+      submit: "Post"
+    user_info:
+      view_profile: "View my profile"
+      micropost: "micropost"
 
   sessions:
     new:
@@ -148,3 +157,21 @@ en:
   account_activations:
     success_activation: "Account activated!"
     fail_activation: "Invalid activation link"
+
+  microposts:
+    micropost:
+      posted: "Posted"
+      ago: "ago"
+      delete: "Delete"
+      sure: "you sure?"
+    create:
+      success: "Micropost created!"
+    destroy:
+      not_fond: "Not found user"
+      success: "Micropost deleted"
+      error: "Can't delete micropost"
+
+  error_alert: "Maximum file size is 5MB. Please choose a smaller file."
+
+  invalid_image_format: "must be a valid image format"
+  invalid_image_size: "should be less than 5MB"

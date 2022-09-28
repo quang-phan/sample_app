@@ -3,6 +3,7 @@ vi:
     nav:
       prev: "Trước"
       next: "Tiếp"
+
   layouts:
     header:
       home: "Trang chủ"
@@ -34,16 +35,17 @@ vi:
     help:
       title: "Trợ giúp"
       help: "Trợ giúp"
-      text: "Nhận trợ giúp trong khóa học Ruby on Rails tại 
+      text: "Nhận trợ giúp trong khóa học Ruby on Rails tại
   <a href=\"https://www.railstutorial.org/help\">đây</a>.
   Để nhận trợ giúp về sách
   <a href=\"https://www.railstutorial.org/book\"><em>Ruby on Rails Tutorial</em>
   </a>"
     home:
       welcome: "Chào mừng đến với Sample App"
-      text: "Đây là trang chủ cho khóa học 
+      text: "Đây là trang chủ cho khóa học
     <a href=\"https://www.railstutorial.org/\">Ruby on Rails</a>"
       sign_up: "Đăng ký ngay!"
+      micropost_feed: "Cảm xúc bài đăng"
 
   password_resets:
     new:
@@ -82,6 +84,7 @@ vi:
       submit: "Tạo tài khoản"
     show:
       error_messages: "Không tìm thấy thông tin người dùng"
+      micropost: "Bài đăng"
     create:
       welcome: "Chào mừng đến với Sample App!"
       danger: "Không thể tạo thông tin người dùng"
@@ -112,6 +115,12 @@ vi:
     error_messages:
       text: "Bạn nhập sai"
       error: "trường"
+    micropost_form:
+      placeholder: "Viết bài đăng mới"
+      submit: "Đăng"
+    user_info:
+      view_profile: "Trang cá nhân của tôi"
+      micropost: "Bài đăng"
 
   sessions:
     new:
@@ -146,3 +155,21 @@ vi:
   account_activations:
     success_activation: "Đã hoàn thành đăng ký tài khoản"
     fail_activation: "Đường dẫn không hợp lệ"
+
+  microposts:
+    micropost:
+      posted: "Đăng"
+      ago: "trước"
+      delete: "Xóa"
+      sure: "Bạn chắc chắn muốn xóa?"
+    create:
+      success: "Bài đăng đã được tạo"
+    destroy:
+      not_fond: "Không tìm thấy người dùng"
+      success: "Đã xóa bài đăng"
+      error: "Không thể xóa bài đăng"
+
+  error_alert: "Giới hạn file là 5MB. Vui lòng chọn file có kích thước nhỏ hơn"
+
+  invalid_image_format: "phải đúng định dạng file yêu cầu"
+  invalid_image_size: "kích thước file phải nhỏ hơn 5MB"

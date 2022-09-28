@@ -9,10 +9,23 @@ user:
 footer:
   url:
     new: "https://news.railstutorial.org/"
+
 user_helper:
   gravatar_options_size: 80
+
 users:
   gravatar_for:
     size: 50
+
 email:
   from: "phan.chinh.quang@example.com"
+
+micropost:
+  length:
+    content_max: 140
+  image:
+    resize: [500, 500]
+    accept: "image/jpeg,image/gif,image/png"
+
+image:
+  size: 5
