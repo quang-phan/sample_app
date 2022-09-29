@@ -6,7 +6,7 @@ class UsersController < ApplicationController
   before_action :translate_pagy, only: :index
 
   def index
-    @pagy, @users = pagy User.seach_all
+    @pagy, @users = pagy User.order_name_by_asc
   end
 
   def new
@@ -68,14 +68,6 @@ class UsersController < ApplicationController
     return if current_user.admin?
 
     flash[:danger] = t ".delete_error_message"
-    redirect_to root_path
-  end
-
-  def find_user_by_id
-    @user = User.find_by id: params[:id]
-    return if @user
-
-    flash[:danger] = t ".error_messages"
     redirect_to root_path
   end
 

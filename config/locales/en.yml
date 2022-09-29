@@ -3,6 +3,7 @@ en:
     nav:
       prev: "prev"
       next: "next"
+      gap: ". . ."
 
   layouts:
     header:
@@ -111,6 +112,13 @@ en:
     user:
       delete: "delete"
       sure: "You sure?"
+    follow:
+      follow: "Follow"
+    unfollow:
+      unfollow: "Unfollow"
+    show_follow:
+      my_profile: "view my profile"
+      microposts: "Microposts:"
 
   shared:
     error_messages:
@@ -122,6 +130,9 @@ en:
     user_info:
       view_profile: "View my profile"
       micropost: "micropost"
+    stats:
+      following: "following"
+      followers: "followers"
 
   sessions:
     new:
@@ -170,6 +181,23 @@ en:
       not_fond: "Not found user"
       success: "Micropost deleted"
       error: "Can't delete micropost"
+
+  relationships:
+    create:
+      success: "Followed user!"
+      error: "Can't follow user!"
+      not_found_user: "Don't have data this user"
+    destroy:
+      success: "Unfollowed user!"
+      error: "Can't unfollow user!"
+      not_found_user: "Don't have data this user"
+
+  following:
+    index:
+      following: "Following"
+  followers:
+    index:
+      follower: "Follower"
 
   error_alert: "Maximum file size is 5MB. Please choose a smaller file."
 

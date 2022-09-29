@@ -6,7 +6,14 @@ class User < ApplicationRecord
 
   has_many :microposts, dependent: :destroy
 
-  scope :seach_all, ->{order name: :asc}
+  has_many :active_relationships, class_name: Relationship.name,
+                                  foreign_key: :follower_id,
+                                  dependent: :destroy
+  has_many :passive_relationships, class_name: Relationship.name,
+                                  foreign_key: :followed_id,
+                                  dependent: :destroy
+  has_many :following, through: :active_relationships, source: :followed
+  has_many :followers, through: :passive_relationships, source: :follower
 
   validates :name, presence: true,
     length: {maximum: Settings.user.length.name_max}
@@ -17,6 +24,7 @@ class User < ApplicationRecord
   validates :password, presence: true,
     length: {minimum: Settings.user.length.password_min}, allow_nil: true
 
+  scope :order_name_by_asc, ->{order :name}
   has_secure_password
 
   def remember
@@ -58,7 +66,19 @@ class User < ApplicationRecord
   end
 
   def feed
-    Micropost.by_user(id).seach_by_created_at_desc
+    Micropost.search_following(following_ids << id).seach_by_created_at_desc
+  end
+
+  def follow other_user
+    following << other_user
+  end
+
+  def unfollow other_user
+    following.delete other_user
+  end
+
+  def following? other_user
+    following.include? other_user
   end
 
   class << self

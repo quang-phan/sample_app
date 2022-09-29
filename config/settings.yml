@@ -29,3 +29,7 @@ micropost:
 
 image:
   size: 5
+
+show_follow:
+  gravatar:
+    image_size: 30

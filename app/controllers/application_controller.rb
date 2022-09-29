@@ -23,4 +23,12 @@ class ApplicationController < ActionController::Base
     flash[:danger] = t ".message"
     redirect_to login_path
   end
+
+  def find_user_by_id
+    @user = User.find_by id: params[:id]
+    return if @user
+
+    flash[:danger] = t ".error_messages"
+    redirect_to root_path
+  end
 end
